@@ -1,0 +1,402 @@
+#allWrap {width:100%;}
+#allWrap:after {content:""; display:block; clear:both;}
+#wrap {position:relative; width:100%;}
+#wrap:after {content:""; display:block; clear:both;}
+
+/** header **/
+header {position:relative; left:0; top:0; width:100%; z-index:70;}
+header:after {content:""; display:block; clear:both;}
+header #hwrap {position:relative; width:1400px; height:120px; margin:0 auto; z-index:72;}
+header #hwrap:after {content:""; display:block; clear:both;}
+header #logo {position:relative; display:inline-block; padding:24px 0 0 0; z-index:74;}
+header #logo:after {content:""; display:block; clear:both;}
+
+header #util {position:absolute; right:0; top:33px; z-index:72;}
+header #util ul:after {content:""; display:block; clear:both;}
+header #util ul li {float:left;}
+
+/* visual */
+#visual {position:relative; width:1920px; margin:0 auto; overflow:hidden; z-index:10;}
+
+/* location */
+.locWrap {position:relative; width:1200px; margin:0 auto; overflow:hidden; margin-top:110px; line-height:1.2; z-index:15;}
+.locTitle {position:relative; width:100%; font-family:'Nanum GothicB', sans-serif; font-size:45px; color:#fff; text-align:center;}
+.locStep {position:relative; width:100%; font-family:'Nanum Gothic', sans-serif; font-size:12px; line-height:15px; color:#fff; text-align:center; margin-top:15px;}
+
+/* container */
+#container {position:relative; width:1604px; margin:0 auto; background-position: left top, 0 0; background-repeat: repeat-x;}
+
+/* ContentsArea */
+#ContentsArea {position:relative; width:100%; margin:0 auto;}
+
+/* tabmenu */
+.tabmenu {clear:both;}
+.tabmenu ul {*zoom:1;height:58px;}
+.tabmenu ul:after {content:""; display:block; clear:both;}
+.tabmenu li {float:left; height:39px; font-size:17px; color:#666; padding:18px 0 0; text-align:center; font-family:'Nanum Gothic', sans-serif; border-right:1px solid #c8c8c8;}
+.tabmenu li:first-child {border-left:1px solid #c8c8c8;}
+.tabmenu li a:hover {text-decoration:underline;}
+.tabmenu li.on {height:38px; background:#ffffff; border-top:2px solid #ff3714; }
+.tabmenu li.on a {font-size:17px; font-weight:bold; color:#ff3014; text-decoration:none;}
+.tabmenu li.last {border-right:1px solid #c8c8c8;}
+
+.tabmenu02{position:relative;}
+.tabmenu02::after{content:''; display:block; clear:both;}
+.tabmenu02 ul{display: block; margin:0 auto;}
+.tabmenu02 ul::after{content:''; display:block; height:0; clear:both;}
+.tabmenu02 ul li{float: left; height: 50px; line-height: 50px; font-size: 19px; font-family:'Nanum Gothic', sans-serif; border-top:1px solid #dcddde; border-right:1px solid #dcddde; border-bottom:1px solid #dcddde;}
+.tabmenu02 ul li:first-child {border-left:1px solid #dcddde;}
+.tabmenu02 ul li a{display: block; text-align: center; text-decoration: none; height: 50px; line-height: 50px; font-size: 19px; color: #999;}
+.tabmenu02 ul li a:hover{text-decoration: underline;}
+.tabmenu02 ul li.on a{font-family: "Nanum GothicB"; text-decoration: none; font-size: 19px; color: #fff; background-color:#ff3714; border:none !important;}
+.tabmenu02 ul li.last {border-right:1px solid #c8c8c8;}
+
+.tabmenu03{position:relative;}
+.tabmenu03::after{content:''; display:block; clear:both;}
+.tabmenu03 ul{display: block; margin:0 auto;}
+.tabmenu03 ul::after{content:''; display:block; height:0; clear:both;}
+.tabmenu03 ul li{float: left; height: 64px; line-height: 64px; font-size: 26px; font-family:'Nanum Gothic', sans-serif;}
+.tabmenu03 ul li a{display: block; text-align: center; text-decoration: none; height: 64px; line-height: 64px; font-size: 26px; color: #999; border-bottom:1px solid #dcddde;}
+.tabmenu03 ul li a:hover{text-decoration: underline;}
+.tabmenu03 ul li.on a{font-family: "Nanum GothicB"; text-decoration: none; font-size: 26px; color: #2b2b2b; border-bottom:2px solid #2b2b2b;}
+
+/* ConStart */
+.conStart {position:relative; width:100%; margin-bottom:100px;}
+.conStart:after {content:""; display:block; clear:both;}
+
+/* ConStart */
+.conWrap {position:relative; width:100%;}
+.conWrap:after {content:""; display:block; clear:both;}
+
+/* 占쏙옙占쎌뵠占쏙옙占쎌겫占쎈열 */
+.titleArea {position:relative; width:100%; height:60px; margin-bottom:10px; background-position: center bottom, 0 0; background-repeat: no-repeat;}
+.titleCon {position:relative; width:100%; font-size:50px; color:#000; text-align:center; font-family:'Nanum GothicB', sans-serif;}
+
+/* �뚢뫂�쀯㎘占� 占쎌쟿占쎌뵠占쎈툡占쎌뜍 */
+.conTxt {position:relative; width:100%; text-align:center;}
+
+.conList{position:relative; width:100%;}
+.conList ul{position:relative; margin-top:40px;}
+.conList ul:after {content:""; display:block; clear:both;}
+.conList ul li{float:left; width:277px; height:257px; border:1px solid #dcddde; margin-left:28px;}
+.conList ul li:first-child{margin-left:0px;}
+.conList .ss_img{position:relative; width:100%; height:150px; line-height:150px; text-align:center;}
+.conList .ss_img img{vertical-align:top;}
+.conList .ss_txtArea{width:237px; height:65px; padding:20px; background-color:#f8f8f8; border-top:1px solid #dcddde;}
+.conList .ss_txtArea a span:hover{text-decoration:underline;}
+.conList .ss_txtArea a span.tit{width:237px; height:40px; display:inline-block; color:#000; font-size:18px; line-height:24px; font-family:'Nanum GothicB', sans-serif; letter-spacing:-1px;}
+.conList .ss_txtArea span.tit{width:237px; height:45px; display:inline-block; color:#000; font-size:18px; line-height:24px; font-family:'Nanum GothicB', sans-serif; letter-spacing:-1px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap:break-word;}
+.conList .ss_txtArea span.txt{width:237px; height:20px; display:inline-block; color:#666; font-size:15px; line-height:30px; font-family:'Nanum Gothic', sans-serif; text-overflow: ellipsis;}
+
+.conList02{position:relative; width:100%;}
+.conList02 ul{position:relative; margin-top:40px;}
+.conList02 ul:after{content:""; display:block; clear:both;}
+.conList02 ul li{float:left; width:222px; margin-left:20px;}
+.conList02 ul li:first-child{margin-left:0px;}
+.conList02 .loArea{position:relative; width:100%; height:138px; line-height:138px; text-align:center; border:1px solid #dcddde;}
+.conList02 .loArea img{vertical-align:middle;}
+.conList02 .txtArea{position:relative; width:100%; padding:10px 0px; font-size:15px; line-height:120%; text-align:center; overflow:hidden;}
+
+/* 占쎄퐣�뇡�슦�넅筌롳옙 �⑤벏�꽰 - contents */
+.contents_wrap{width:100%;}
+.contents_wrap.minHeight{min-height: 455px;}
+
+/* 野껊슣�뻻占쎈솇 占쎌굨占쎄묶 */
+.board_wrap{color: #555; font-size: 13px;}
+.top_wrap{line-height: 160%; margin-bottom: 20px;}
+.top_wrap::after{content:''; display:block; height:0; clear:both;}
+	.top_wrap label.gohead{float: left; display: inline-block; padding-left: 22px; margin-right: 10px; color: #222; font-size: 15px; line-height: 120%; font-family: "Nanum GothicB";}
+	.top_wrap label.bold_black{font-family: "Nanum GothicB"; color: #222;}
+	.top_wrap select{float: left; margin-right: 5px; height: 22px;}
+	.top_wrap button{float: left;}
+	.top_wrap .chk_wrap{float: left; margin:0; line-height: 100%; margin-right: 10px; padding-right: 10px; padding-top: 1px;}
+	.top_wrap .chk_wrap input[type='checkbox']{margin: 0;}
+	.top_wrap .find_right_wrap input.txt_find{float: left; margin-right: 5px; width: 268px; height: 38px; font-size:14px; color: #666; border: 1px solid #e3e3e3; line-height: 20px; padding: 0 5px;}
+
+.bottom_wrap{text-align: center; margin-top: 30px;}
+.bottom_wrap.mt00{margin-top: 0;}
+	.paging_wrap{display: inline-block; color: #666;}
+	.paging_wrap a.btn{display: inline-block; width: 43px; height: 43px; border: 1px solid #e3e3e3; text-indent: -9999px; font-size: 0; vertical-align: middle;}
+	.paging_wrap a.goFirst{background:url('../images/board/bg_page_first.png') 14px 15px no-repeat #ffffff;}
+	.paging_wrap a.goPrev{background:url('../images/board/bg_page_prev.png') 15px 15px no-repeat #ffffff; margin-right: 5px;}
+	.paging_wrap a.goNext{background:url('../images/board/bg_page_next.png') 18px 15px no-repeat #ffffff; margin-left: 5px;}
+	.paging_wrap a.goLast{background:url('../images/board/bg_page_last.png') 14px 15px no-repeat #ffffff;}
+	.paging_wrap a.page{display: inline-block; width: 48px; height: 13px; font-size: 15px; line-height: 13px; vertical-align: middle; border-right: 1px solid #e9e9e9; color: inherit; text-decoration: none; font-family: "Tahoma";}
+	.paging_wrap a.page.here{display: inline-block; width: 43px; height: 43px; line-height:43px; border: 1px solid #ff3014; color: #ff3014; font-family: "Nanum GothicB";}
+	.paging_wrap a.page:hover{text-decoration: underline;}
+	.paging_wrap a.page.last{border-right: 0;}
+
+/* 野껊슣�뻻占쎈솇 占쎌굨占쎄묶 - 揶쎼끇�쑎�뵳�뗭굨 */
+.gall_board_wrap {position:relative; width:100%; border-top:2px solid #2b2b2b; border-bottom:1px solid #929292;}
+.gall_board_wrap ul {width:100%; border-bottom:1px solid #e3e3e3; padding-top:40px; padding-bottom:40px;}
+.gall_board_wrap ul::after{content:''; display:block; height:0; clear:both;}
+.gall_board_wrap ul li {width:575px; margin-left:50px; float:left;}
+.gall_board_wrap ul li:first-child {margin-left:0px;}
+p.gall_img_area {width:350px; height:290px; border:1px solid #939393; margin:0 auto;}
+p.gall_con_area {width:315px; height:142px;}
+p.gall_con_area a span:hover {text-decoration:underline !important;}
+p.gall_con_area span {display:inline-block;}
+p.gall_con_area span.tit {font-family: "Nanum GothicB"; font-size:20px; color: #000; letter-spacing:-1px; padding-bottom:15px;}
+p.gall_con_area span.txt {font-family: "Nanum Gothic"; font-size:14px; color: #666; line-height:160%; padding-bottom:20px;}
+p.gall_con_area span.gDate {font-family:'Tahoma', sans-serif; font-size:15px; color:#666;}
+textarea.pooltext {width:98%; height:200px; border:1px solid #939393; overflow-y: scroll;}
+textarea.blocktext {width:98%; height:350px; border:1px solid #939393; overflow-y: scroll;}
+.float_center{width: 100%;}
+
+/* 占쎈탣占쎌삸 */
+.float_wrap::after{content:''; display:block; height:0; clear:both;}
+    .float_left{float: left;}
+    .float_right{float: right;}
+
+/* 占쎈�볩옙�뮞占쎈뱜 */
+.txt_ex{font-family:'Nanum GothicB', sans-serif; font-size: 15px; color: #666;}
+.txt_ex span{font-family:'Nanum GothicB', sans-serif; font-size: 15px; color:#ff3714;}
+.context_title{font-family:'Nanum GothicB', sans-serif; margin-bottom: 15px; font-size: 24px; color:#000; display: block;}
+
+/* 占쎌젟占쎌졊 */
+.btn_right_wrap{text-align:right;}
+
+/* button 占쏙옙占쎌뿯癰귨옙 占쎌젟�뵳占� */
+.btn_wrap{text-align: center; width: 100%;}
+.btn_wrap::after{content:''; display:block; height:0; clear:both;}
+
+/* input [type=checkbox] 占쎈뮞占쏙옙占쎌뵬 占쎌젟�뵳占�*/
+.chk_wrap{display: inline-block; margin-bottom: 5px;}
+.chk_wrap.mb_no{margin-bottom: 0;}
+.chk_wrap.inblock{width: auto;}
+.chk_wrap input[type="checkbox"]{vertical-align: middle; margin: 0 5px 0 0;}
+.chk_wrap label{vertical-align: middle; font-family:'Nanum GothicB', sans-serif; color: #333; font-size: 16px;}
+
+/* 甕곌쑵�뱣 */
+button a{display:inline-block;}
+button.typeBlack_s, a.typeBlack_s{width:70px; height: 38px; line-height: 250%; display: inline-block; vertical-align: middle; font-size:14px; color: #e3e3e3; font-family: "Nanum GothicB"; background-color:#2b2b2b; border:1px solid #2b2b2b;}
+button.typeBlack_b, a.typeBlack_b{width:190px; height: 48px; line-height: 250%; display: inline-block; vertical-align: middle; font-size:20px; color: #fff; font-family: "Nanum GothicB"; background-color:#2b2b2b; border:1px solid #2b2b2b;}
+button.typeRed_s, a.typeRed_s{width:70px; height: 38px; line-height: 250%; display: inline-block; vertical-align: middle; font-size:14px; color: #fff; font-family: "Nanum GothicB"; text-align:center; background-color:#ff3014; border:1px solid #d71e05;}
+button.typeRed_b, a.typeRed_b{width:190px; height: 48px; line-height: 250%; display: inline-block; vertical-align: middle; font-size:20px; color: #fff; font-family: "Nanum GothicB"; text-align:center; background-color:#ff3014; border:1px solid #d71e05;}
+
+
+/* input [type=text] 占쎈뮞占쏙옙占쎌뵬 占쎌젟�뵳占� */
+input.word_long{width:386px; height: 38px; font-size:14px; color: #666; border: 1px solid #dcddde; line-height: 16px; padding: 5px 5px;}
+
+/* 占쎈�믭옙�뵠�뇡占� type01*/
+.table_type01_wrap{border-top: 2px solid #2b2b2b; border-bottom: 1px solid #e3e3e3; margin-bottom: 15px;}
+.table_type01_wrap.colorGray{color: #666;}
+.table_type01_wrap.mb00{margin-bottom: 0;}
+table.type01{font-size: 16px; line-height: 160%;}
+table.type01 thead tr th{border-bottom: 1px solid #929292; border-right: 1px solid #d7d7d7; color: #333; font-weight: bold; padding: 11px 0; background-color: #f8f8f8;}
+table.type01 thead tr th:last-child{border-right: 0;}
+table.type01 thead.short tr th{padding: 3px 0;}
+table.type01 tbody tr th{border-bottom: 1px solid #d7d7d7; color: #333; font-family: "Nanum GothicB"; padding: 11px 0; background-color: #f8f8f8; vertical-align: middle;}
+table.type01 tbody tr td{border-right: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7; padding: 7px 0; text-align: center; vertical-align: middle;}
+table.type01 tbody tr td:last-child{border-right: 0;}
+table.type01 tbody tr td.no_data{padding: 150px 0; height: auto;}
+table.type01 tbody.short tr td{padding: 5px 0; line-height: 120%;}
+table.type01 tbody.alignL tr td{text-align: left; padding: 7px 10px;}
+table.type01 tfoot th, table.type01 tfoot td{border-bottom: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7; padding: 7px 0; text-align: center; font-family: "Nanum GothicB";}
+table.type01 tfoot tr td:last-child{border-right: 0;}
+table.type01 label.width85{width: 85px; display: inline-block;}
+
+/* 占쎈�믭옙�뵠�뇡占� type02*/
+.table_type02_wrap{border-top: 2px solid #000; border-bottom: 2px solid #000; border-left: 2px solid #000; border-right: 2px solid #000; margin-bottom: 10px;}
+.table_type02_wrap::after{content:''; display:block; clear:both;}
+table.type02{color: #555;  float: left; position: relative; width: 1600px;}
+table.type02 thead tr th{border-bottom: 2px solid #000; border-left: 2px solid #000; border-right: 2px solid #000; border-top: 2px solid #000; padding: 22px 0; font-family:'Nanum GothicB', sans-serif; color: #000; font-size: 16px;}
+table.type02 tbody{}
+table.type02 tbody a{color: inherit; text-decoration: none;}
+table.type02 tbody a:hover{color: inherit; text-decoration: underline;}
+table.type02 tbody td{font-size: 15px; text-align: center; vertical-align: middle; height: 60px; border-bottom: 2px solid #000; border-left: 2px solid #000; border-right: 2px solid #000; border-top: 2px solid #000;}
+table.type02 tbody td.alignL{text-align: left; padding-left: 7px;}
+table.type02 tbody td.no_data{padding: 150px 0; height: auto;}
+
+/* 占쎈�믭옙�뵠�뇡占� type03 - 野껊슣�뻻占쎈솇 占쎄맒占쎄쉭癰귣떯由� 占쎌넅筌롳옙 */
+.table_type03_wrap{border-top: 2px solid #000; margin-bottom: 15px;}
+.table_type03_wrap::after{content:''; display:block; clear:both;}
+table.type03{color: #666; font-size: 15px;}
+table.type03 thead th.head{border-bottom: 1px solid #929292; padding: 22px 0; font-family:'Nanum GothicB', sans-serif; color: #333; padding: 23px 20px; text-align: left;}
+table.type03 thead th{padding: 10px 20px; background-color: #f9f9f9;/* border-bottom: 1px solid #d7d7d7;*/ text-align: left;}
+table.type03 thead th .info_title{background: url('../images/board/bg_board_dt.png') 0 5px no-repeat; padding-left: 10px; color: #222; font-family: "Nanum GothicB";}
+table.type03 thead tr.valignB th{padding-bottom: 5px;}
+table.type03 thead tr.valignT th{padding-top: 5px;}
+table.type03 thead th a{color: inherit; text-decoration: none;}
+table.type03 thead th a:hover{text-decoration: underline;}
+table.type03 thead th a img{vertical-align: middle;}
+table.type03 tbody td{padding: 20px; line-height: 200%; border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7;}
+table.type03 tbody td p.strong{font-family: "Nanum GothicB"; font-size: 20px;}
+
+.table_prevNext_wrap{color: #666; font-size: 15px;}
+table.prevNext{color: #555; border-top: 1px solid #d7d7d7;}
+table.prevNext caption{text-indent: -9999px; font-size: 0; height: 0; width: 0;}
+table.prevNext th{font-family: "Nanum GothicB"; color: #222; vertical-align: middle; text-align: center; border-bottom: 1px solid #d7d7d7;}
+table.prevNext th.prev{background: url('../images/board/ico_arrow_up.png') 20px 22px no-repeat #f6f8fa;}
+table.prevNext th.next{background: url('../images/board/ico_arrow_down.png') 20px 25px no-repeat #f6f8fa;}
+table.prevNext td{height: 53px; vertical-align: middle; padding-left: 15px; text-align: left; border-bottom: 1px solid #d7d7d7;}
+table.prevNext td.date{text-align: center; background: url('../images/board/bar_date.png') 0 10px no-repeat;}
+table.prevNext td a{color: inherit; text-decoration: none;}
+table.prevNext td a:hover{text-decoration: underline;}
+
+/* 占쎈튋�꽴占� */
+.scroll_wrap{font-family:'Nanum GothicB', sans-serif; color: #666; font-size:14px; border: 1px solid #b5bfca; padding: 14px; margin-bottom: 15px; height: 230px; overflow-y: scroll;}
+	.scroll_wrap .tt{display: block; margin-bottom: 10px; font-family: "Nanum GothicB"; color:#000;}
+	.scroll_wrap > ul > li{line-height: 120%; margin-bottom: 10px;}
+	.scroll_wrap > ul > li > ul > li{margin: 5px 0; line-height: 120%}
+	.scroll_wrap .space > li{padding-left: 14px; line-height: 120%}
+
+
+
+
+
+
+
+.login-page {
+  width: 500px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 500px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #a9a9a9;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #000000;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #000000;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background: #FFFFFF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #FFFFFF, #696969);
+  background: -moz-linear-gradient(right, #FFFFFF, #696969);
+  background: -o-linear-gradient(top, #FFFFFF, #696969);
+  background: linear-gradient(to bottom, #FFFFFF, #696969);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   
+  min-height: 100vh;   
+}
+
+
+.full-page {
+  width: 1000px;
+  height: 1000px;
+  padding: 5% 0 0;
+  margin: auto;
+}
+.fullform {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 1500px;
+  height: 860px;
+  margin: 0 auto 10px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.inform {
+  position: relative;
+  left: 0px;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 800px;
+  margin: 0 auto 10px;
+  padding: 8px;
+  text-align: left;
+}
+.informs {
+  position: relative;
+  left: 0px;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 800px;
+  margin: 0 auto 10px;
+  padding: 8px;
+  text-align: left;
+}
+.inform button {
+	position: relative;
+  left: 700px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #a9a9a9;
+  width: 10%;
+  border: 0;
+  padding: 0px;
+  color: #FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+}
