@@ -77,22 +77,89 @@ $(document).ready(function() {
         url:"http://127.0.0.1:5000/send_block_info?callback=loadlist",
         dataType:"JSON",
         success : function(data) {
-        var poolvalue = null;
-        var blockvalue = null;
         var pool = "";
         var block = "";
-          $.each(data, function(key, value) { 
-				if (key == "pool_list") {
-					pool = pool + "time_stamp : " + data.time_stamp + "\nhash : "+ data.hash + "\nage : " + data.age + "\nname : " + data.name + "\nRequester : " + data.Requester +"\n\n";
-					
+	var a = 0;
+	var b = 0;
+	var poolts = "";
+	var poolhash = "";
+	var poolage = "";
+	var poolname = "";
+	var poolreq = "";
+	var blockts = "";
+	var blockbhash = "";
+	var blockhash = "";
+	var blockage = "";
+	var blockname = "";
+	var blockreq = "";
+	debugger;
+        $.each(data, function(key, value) { 
+		if (key == "pool_list") {
+			$.each(value,function(s,t){
+			$.each(t,function(k,v){
+				if (k == "time_stamp") {
+					poolts = v;
 				}
-				if (key == "in_block") {
-					block = block + "time_stamp : " + data.time_stamp + "\nBlock_hash : " + data.Block_hash + "\nhash : " + data.hash + "\nage : " + data.age + "\nname : " + data.name + "\nRequester : " + data.Requester +"\n\n";
-					
+				if (k == "data") {
+					$.each(v,function(x,y){
+						if (x == "hash"){
+							poolhash = y;
+						}
+						if (x == "solution"){
+							$.each(y,function(w,z){
+								if (w == "name"){
+									poolname = z;
+								}
+								if (w == "age"){
+									poolage = z;
+								}
+							});
+						}
+					});
 				}
-		  });
-          $('#block').html(block);
-          $('#pool').html(pool);
+				if (k == "Requester") {
+					poolreq = v;
+				}
+			});
+			pool = pool + "time_stamp : " + poolts + "\ndata : {\n\thash : " + poolhash + "\n\tsolution : {\n\t\tname : " + poolname + "\n\t\tage : " + poolage + "\n\t}\n}\nRequester : " + poolreq + "\n\n";
+			});
+		}
+		if (key == "in_block") {
+			$.each(value,function(s,t){
+			$.each(t,function(k,v){
+				if (k == "time_stamp") {
+					blockts = v;
+				}
+				if (k == "Block_hash") {
+					blockbhash = v;
+				}
+				if (k == "data") {
+					$.each(v,function(x,y){
+						if (x == "hash"){
+							blockhash = y;
+						}
+						if (x == "solution"){
+							$.each(y,function(w,z){
+								if (w == "name"){
+									blockname = z;
+								}
+								if (w == "age"){
+									blockage = z;
+								}
+							});
+						}
+					});
+				}
+				if (k == "Requester") {
+					blockreq = v;
+				}
+			});
+			block = block + "time_stamp : " + blockts + "\nblock_hash : " + blockbhash + "\ndata : {\n\thash : " + blockhash + "\n\tsolution : {\n\t\tname : " + blockname + "\n\t\tage : " + blockage + "\n\t}\n}\nRequester : " + blockreq + "\n\n";
+			});
+		}
+	});
+        	$('#block').html(block);
+        	$('#pool').html(pool);
         },
         error : function(xhr, status, error) {
         	$('#pool').html('Connect Error');
@@ -161,7 +228,7 @@ $(document).ready(function() {
         }
   	});
 });
-}, 1000);
+}, 5000);
 
 </script>
 </head>
