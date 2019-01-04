@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Haze Project</title>
 
-<link href="../css/test.css" rel="stylesheet">
+<link href="css/test.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <style type="text/css">
  a:link { color: black; text-decoration: none;}
@@ -175,14 +175,14 @@ $(document).ready(function() {
           $.each(data, function(key, value) { 
 				if (key == "image_packet1") {
 					if(value == null || value == "" || value == "none"){
-						$('#image1').attr('src', "../files/basicimg.jpg");
+						$('#image1').attr('src', "files/basicimg.jpg");
 					} else{
 						$('#image1').attr('src', value);
 					}
 				}
 				if (key == "detected_image1") {
 					if(value == null || value == "" || value == "none"){
-						$('#result1').attr('src', "../files/basicimg.jpg");
+						$('#result1').attr('src', "files/basicimg.jpg");
 					} else{
 						$('#result1').attr('src', value);
 					}
@@ -196,7 +196,7 @@ $(document).ready(function() {
 				}
 				if (key == "image_packet2") {
 					if(value == null || value == "" || value == "none"){
-						$('#image2').attr('src', "../files/basicimg.jpg");
+						$('#image2').attr('src', "files/basicimg.jpg");
 					} else{
 						$('#image2').attr('src', value);
 					}
@@ -204,7 +204,7 @@ $(document).ready(function() {
 				}
 				if (key == "detected_image2") {
 					if(value == null || value == "" || value == "none"){
-						$('#result2').attr('src', "../files/basicimg.jpg");
+						$('#result2').attr('src', "files/basicimg.jpg");
 					} else{
 						$('#result2').attr('src', value);
 					}
@@ -221,10 +221,10 @@ $(document).ready(function() {
         error : function(xhr, status, error) {
         	$('#sol1').html('<p>Not Matched</p>');
         	$('#sol2').html('<p>Not Matched</p>');
-        	$('#image1').attr('src', "../files/basicimg.jpg");
-        	$('#result1').attr('src', "../files/basicimg.jpg");
-        	$('#image2').attr('src', "../files/basicimg.jpg");
-        	$('#result2').attr('src', "../files/basicimg.jpg");
+        	$('#image1').attr('src', "files/basicimg.jpg");
+        	$('#result1').attr('src', "files/basicimg.jpg");
+        	$('#image2').attr('src', "files/basicimg.jpg");
+        	$('#result2').attr('src', "files/basicimg.jpg");
         }
   	});
 });
